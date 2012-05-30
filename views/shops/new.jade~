@@ -1,0 +1,17 @@
+form( method="post", action="/shops" )
+    div
+        div
+            span Nazwa :
+            input( name="nazwa", rows=2, id="editArticleTitle")
+        div
+            span Dzielnica :
+            input( name="dzielnica", rows=2, id="editArticleTitle")
+        div
+            span Ulica :
+            input( name="ulica", rows=2, id="editArticleTitle")
+        div
+            span Link :
+            input( name="lynk", rows=2, id="editArticleTitle")
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")

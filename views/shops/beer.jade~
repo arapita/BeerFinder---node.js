@@ -1,0 +1,9 @@
+#beer
+  h1= beer.nazwa
+  span Ektrakt:
+  p= beer.ekstrakt
+  p= beer.alkohol
+  p= beer.gatunek
+  p= beer.cena
+  p= beer.rodzaj
+  p= beer.pojemnosc

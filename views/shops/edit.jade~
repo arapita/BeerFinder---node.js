@@ -1,0 +1,22 @@
+form( method="post", action="/shops/" + shop._id)
+    div
+        div
+            span Nazwa :
+            textarea( name="nazwa", rows=1)
+              !{ shop.nazwa }
+        div
+            span Dzielnica :
+            textarea( name="dzielnica", rows=1)
+              !{ shop.ekstrakt }
+        div
+            span Ulica :
+            textarea( name="ulica", rows=1)
+              !{ shop.alkohol }
+        div
+            span Link :
+            textarea( name="lynk", rows=1)
+              !{ shop.lynk }
+
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")

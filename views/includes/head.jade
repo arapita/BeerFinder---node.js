@@ -1,0 +1,15 @@
+#header
+  div.nav
+    ul
+      li.button
+        a.blue.awesome(href="/city/")!= " City"
+      li.button
+        a.blue.awesome(href="/shops/")!= " Shops"
+      li.button
+        a.blue.awesome(href="/beers/")!= " Beers"
+      li.button
+        a.blue.awesome(href="/luckyOne")!= " Lucky One"
+        - if (session.email)
+          user= 'zalogowany jako: ' + session.email
+          logout
+              a(href='/sessions/destroy') wyloguj

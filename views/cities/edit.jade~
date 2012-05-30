@@ -1,0 +1,9 @@
+form( method="post", action="/city/" + city._id)
+    div
+        div
+            span Nazwa :
+            textarea( name="nazwa", rows=1)
+              !{ city.nazwa }
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")

@@ -1,0 +1,9 @@
+#city
+  h1= city.nazwa
+
+div
+p Sklepy w miescie: #{city.nazwa}
+   br
+  - each shp in shops
+      a(href="/shops/"+ shp._id)!= shp.nazwa + '   |   '
+  br

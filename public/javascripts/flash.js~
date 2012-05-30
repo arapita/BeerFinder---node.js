@@ -1,0 +1,10 @@
+(function() {
+  function hideFlashMessages() {
+    $(this).fadeOut();
+  }
+
+  setTimeout(function() {
+    $('.flash').each(hideFlashMessages);
+  }, 4000);
+  $('.flash').click(hideFlashMessages);
+})();

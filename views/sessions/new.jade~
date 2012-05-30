@@ -1,0 +1,15 @@
+h2 Log In
+  p
+    a.button(href='/users/new') Create an account &rarr;
+  form.users#login(method='post', action='/sessions')
+    div
+      label Email:
+      input(name='user[email]', value=user.email || '')
+    div
+      label Password:
+      input(name='user[password]', value=user.password || '', type='password')
+    div
+      label(for='remember_me') Remember me:
+      input#remember_me(type='checkbox', name='remember_me')
+    div
+      input(type='submit', value='Log In')

@@ -1,0 +1,33 @@
+form( method="post", action="/beers" )
+    div
+        div
+            span Nazwa :
+            input( name="nazwa", rows=2, id="editArticleTitle")
+        div
+            span Ekstrakt :
+            input( name="ekstrakt", rows=2, id="editArticleTitle")
+        div
+            span Alkohol :
+            input( name="alkohol", rows=2, id="editArticleTitle")
+        div
+            span Gatunek :
+            input( name="gatunek", rows=2, id="editArticleTitle")
+        div
+            span Cena :
+            input( name="cena", rows=2, id="editArticleTitle")
+        div
+            span Rodzaj :
+            input( name="rodzaj", rows=2, id="editArticleTitle")
+        div
+            span Pojemność :
+            input( name="pojemnosc", rows=2, id="editArticleTitle")
+        div
+            span Sklep: 
+            select(name='')
+             - for i in shops
+               option(value='volvo')  #{i.nazwa}
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")
+
+//_id:

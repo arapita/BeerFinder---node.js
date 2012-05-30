@@ -1,0 +1,12 @@
+#shops
+  ul#sortable.shop
+        span.button
+          a.blue.awesome(href="/shops/new/")!= " Add new shop"
+    - each shp in shops
+      li.title.sortable
+        h1
+          a(href="/shops/"+ shp._id.toHexString())!= shp.nazwa
+        span.button
+          a.orange.awesome(href="/shops/edit/"+ shp._id.toHexString())!= " edit"
+        span.button
+          a.red.awesome(href="/shops/remove/"+ shp._id.toHexString())!= " delete"

@@ -1,0 +1,16 @@
+#shops
+  h1= 'Nazwa: ' + shops.nazwa
+  p= 'Dzielnica: ' + shops.dzielnica
+  p= 'Ulica: ' + shops.ulica
+p
+  a(href='' + shops.lynk) Pokaz na mapie
+  //a(href='shops.lynk')!= Pokaz
+
+div
+p
+PIWA DOSTĘPNE W SKLEPIE:
+   br
+  - each br in beers
+      a(href="/beers/"+ br._id)!= br.nazwa + ' '
+       = br.cena + 'zł  |  '
+  br

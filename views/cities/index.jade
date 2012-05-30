@@ -1,0 +1,14 @@
+!{flashMessages}
+#cit
+  ul#sortable.city
+  span.button
+          a.blue.awesome(href="/city/new/")= " Add new city"
+    - each c in cit
+      li.title.sortable
+        h1
+          a(href="/city/"+ c._id.toHexString())!= c.nazwa
+        span.button
+          a.orange.awesome(href="/city/edit/"+ c._id.toHexString())!= " edit"
+        span.button
+          a.red.awesome(href="/city/remove/"+ c._id.toHexString())!= " delete"
+

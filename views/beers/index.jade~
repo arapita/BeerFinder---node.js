@@ -1,0 +1,14 @@
+!{flashMessages}
+#beers
+  ul#sortable.beer
+        span.button
+          a.blue.awesome(href="/beers/new/")!= " Add new beer"
+    - each beer in beers
+      li.title.sortable
+        h1
+          a(href="/beers/"+ beer._id.toHexString())!= beer.nazwa
+        span.button
+          a.orange.awesome(href="/beers/edit/"+ beer._id.toHexString())!= " edit"
+        span.button
+          a.red.awesome(href="/beers/remove/"+ beer._id.toHexString())!= " delete"
+   

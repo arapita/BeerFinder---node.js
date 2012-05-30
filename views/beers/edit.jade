@@ -1,0 +1,34 @@
+form( method="post", action="/beers/" + beer._id)
+    div
+        div
+            span Nazwa :
+            textarea( name="nazwa", rows=1)
+              !{ beer.nazwa }
+        div
+            span Ekstrakt :
+            textarea( name="ekstrakt", rows=1)
+              !{ beer.ekstrakt }
+        div
+            span Alkohol :
+            textarea( name="alkohol", rows=1)
+              !{ beer.alkohol }
+        div
+            span Gatunek :
+            textarea( name="gatunek", rows=1)
+              !{ beer.gatunek }
+        div
+            span Cena :
+            textarea( name="cena", rows=1)
+              !{ beer.cena }
+        div
+            span Rodzaj :
+            textarea( name="rodzaj", rows=1)
+              !{ beer.rodzaj }
+        div
+            span Pojemność :
+            textarea( name="pojemnosc", rows=1)
+              !{ beer.pojemnosc }
+
+        div 
+        div#editArticleSubmit
+            input( type="submit", value="Send")
